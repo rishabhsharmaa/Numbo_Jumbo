@@ -1,0 +1,123 @@
+body {
+    font-family: 'Comic Sans MS', sans-serif;
+    text-align: center;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #ff7f50;
+    font-size: 3em;
+    margin-top: 20px;
+    text-shadow: 2px 2px 5px #ff6347;
+}
+
+label, #message, #score {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.game-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.tower {
+    width: 20px;
+    height: 300px;
+    background-color: #8b4513;
+    border-radius: 10px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.tower:hover {
+    transform: scale(1.1);
+}
+
+.disk {
+    height: 30px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: transform 0.2s ease;
+}
+
+.disk:active {
+    transform: translateX(-50%) scale(1.1);
+}
+
+#disk1 {
+    width: 80px;
+    background-color: #ff6347;
+}
+
+#disk2 {
+    width: 100px;
+    background-color: #ffa500;
+}
+
+#disk3 {
+    width: 120px;
+    background-color: #98fb98;
+}
+
+#disk4 {
+    width: 140px;
+    background-color: #add8e6;
+}
+
+#disk5 {
+    width: 160px;
+    background-color: #9370db;
+}
+
+#disk6 {
+    width: 180px;
+    background-color: #ff69b4;
+}
+
+#message {
+    font-size: 1.3em;
+    color: #ff4500;
+    margin: 15px;
+    text-shadow: 1px 1px 2px #ff7f50;
+}
+
+#score {
+    font-size: 1.2em;
+    color: #333;
+}
+
+select {
+    font-size: 1em;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #8b4513;
+    background-color: #ffdab9;
+    color: #333;
+    margin-top: 10px;
+}
+
+select:focus {
+    outline: none;
+    border-color: #ffa500;
+    box-shadow: 0 0 5px #ffa500;
+}
+.invalid-move {
+    animation: shake 0.3s ease-in-out;
+}
+
+@keyframes shake {
+    0% { transform: translateX(-5px); }
+    25% { transform: translateX(5px); }
+    50% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+    100% { transform: translateX(0); }
+}

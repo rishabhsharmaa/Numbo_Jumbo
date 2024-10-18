@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0f7fa;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.game-button {
+    display: block;
+    margin: 10px auto;
+    padding: 15px 30px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #ff6f61;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.game-button:nth-child(2) {
+    background-color: #4dd0e1;
+}
+
+.game-button:nth-child(3) {
+    background-color: #ffca28;
+}
+
+.game-button:nth-child(4) {
+    background-color: #ab47bc;
+}
+
+.game-button:hover {
+    transform: scale(1.1); /* Slightly grows the button */
+    color: #fff59d;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.game-button:active {
+    transform: scale(1); /* Quickly "bounces" back to original size */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+.game-button:hover {
+    animation: bounce 0.3s ease-in-out;
+}

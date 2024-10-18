@@ -1,0 +1,184 @@
+body {
+  font-family: 'Fredoka One', sans-serif;
+  background-color: #e0f7fa; /* Softer, bright background color */
+  color: #2b4d66;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+body::before {
+  content: "";
+  background-image: url('Forest.jpg');
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+h1 {
+  color: #ff6b6b; /* Bright color to catch attention */
+  font-size: 3.5em; /* Slightly bigger font for kids */
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-shadow: 2px 2px 0 rgba(255, 255, 255, 0.7), 0 0 25px rgba(117, 9, 117, 0.5);
+  animation: bounce 1.2s infinite;
+  margin: 10px 0;
+}
+
+@keyframes bounce {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-12px);
+  }
+}
+
+header {
+  position: relative;
+  text-align: center;
+  background-color: #6fe3ff; /* Fun, bright blue header */
+  padding: 30px;
+  border-bottom: 8px solid #92e389;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Adding depth */
+}
+
+header img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+  z-index: 1;
+}
+
+header h1, header p {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+}
+
+header h1 {
+  color: #0b3d91; /* Darker color for contrast */
+  font-size: 4em;
+}
+
+.auth-buttons {
+  position: relative;
+  top: 30px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  z-index: 3;
+}
+
+.lgnbtn {
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  color: white;
+  background-color: #ff6361;
+  font-weight: bold;
+  font-size: 1.3em;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lgnbtn:hover {
+  background-color: #fc4a4a;
+  transform: translateY(-5px);
+}
+
+.lgnbtn:active {
+  transform: translateY(0);
+}
+
+#main-content {
+  padding: 50px 20px;
+  background-color: #ffedd5;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* More depth */
+  margin: 30px auto;
+  max-width: 800px;
+}
+
+#problem {
+  font-size: 2.5em;
+  margin: 20px 0;
+  color: #1a535c;
+  font-weight: bold;
+  text-shadow: 2px 2px 0 rgba(255, 255, 255, 0.6), 0 0 15px rgba(255, 215, 0, 0.5);
+}
+
+#answer-input {
+  font-size: 1.8em;
+  padding: 12px;
+  border-radius: 10px;
+  border: 3px solid #6bcf63;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#feedback {
+  font-size: 2em;
+  margin: 20px 0;
+  color: #ff6f61;
+}
+
+#score {
+  font-size: 1.8em;
+  margin: 20px 0;
+  color: #17b978;
+  font-weight: bold;
+}
+
+.button {
+  background-color: #ffc107; /* Playful yellow */
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.5em;
+  border-radius: 50px;
+  margin: 10px;
+  display: inline-block;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+  background-color: #e0a800;
+  transform: scale(1.1);
+}
+
+.button2 {
+  color: #176fb0;
+  font-size: 1.5em;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: color 0.3s;
+}
+
+.button2:hover {
+  color: #0e4a76;
+}
+
+footer {
+  background-color: #003049;
+  color: white;
+  padding: 20px 0;
+  margin-top: 50px;
+  border-top: 5px solid #fcbf49;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.15);
+}
+
+footer p {
+  margin: 0;
+}

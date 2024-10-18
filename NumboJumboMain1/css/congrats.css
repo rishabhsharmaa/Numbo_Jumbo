@@ -1,0 +1,99 @@
+body {
+    font-family: 'Fredoka One', sans-serif;
+    background-color: #fffae3;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+  }
+  .home-button {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Fredoka One', cursive;
+}
+  header {
+    background-color: #fcbf49;
+    padding: 20px;
+    border-bottom: 5px solid #f77f00;
+  }
+
+  header h1 {
+    color: #003049;
+    font-size: 3em;
+    margin: 0;
+  }
+
+  #main-content {
+    padding: 40px 20px;
+  }
+
+  .button {
+    background-color: #ff595e;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    border-radius: 50px;
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+  }
+
+  .button:hover {
+    background-color: #d62828;
+  }
+
+  footer {
+    background-color: #003049;
+    color: white;
+    padding: 10px 0;
+    margin-top: 50px;
+    border-top: 5px solid #fcbf49;
+  }
+
+  footer p {
+    margin: 0;
+  }
+
+  .glitter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .glitter div {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 223, 0, 0.8);
+    border-radius: 50%;
+    animation: glitter 1s infinite;
+  }
+
+  @keyframes glitter {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+  }

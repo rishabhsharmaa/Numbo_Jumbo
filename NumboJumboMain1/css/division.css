@@ -1,0 +1,100 @@
+body {
+  font-family: 'Fredoka One', sans-serif;
+  background-color: #fffae3;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.home-button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+header {
+  text-align: center;
+}
+
+header {
+  background-color: #fcbf49;
+  padding: 20px;
+  border-bottom: 5px solid #f77f00;
+}
+
+header h1 {
+  color: #003049;
+  font-size: 3em;
+  margin: 0;
+}
+
+#main-content {
+  padding: 40px 20px;
+}
+
+.question {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.input-box {
+  padding: 10px;
+  font-size: 1.5em;
+  border-radius: 5px;
+  border: 2px solid #333;
+  margin-bottom: 20px;
+}
+
+.button {
+  background-color: #ff595e;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.5em;
+  border-radius: 50px;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #d62828;
+}
+
+.points {
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+.menu-button {
+  background-color: #3a86ff;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  border-radius: 30px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.menu-button:hover {
+  background-color: #265adf;
+}
+
+.feedback {
+  font-size: 1.5em;
+  margin-top: 20px;
+  height: 30px;
+  color: green;
+}
+
+.feedback.wrong {
+  color: red;
+}

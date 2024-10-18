@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tower of Rings</title>
+    <link rel="stylesheet" href="css/towerofhanoicss.css">
+</head>
+<body>
+    <header>
+        <div class="title-container">
+            <h1>Division</h1>
+            <p>Test your division skills!</p>
+        </div>
+    </header>
+    <h1>Tower of Hanoi</h1>
+    <label for="diskCount" style="font-weight: bolder;">Select number of disks:</label>
+    <select id="diskCount" onchange="setup()">
+        <option value="3">3 Disks</option>
+        <option value="4">4 Disks</option>
+        <option value="5">5 Disks</option>
+        <option value="6">6 Disks</option>
+    </select>
+
+    <div class="game-container">
+        <div class="tower" id="tower1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="tower" id="tower2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="tower" id="tower3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </div>
+    <p id="message">Move all the disks from Tower 1 to Tower 3.</p>
+    <p id="score">Moves: 0</p>
+    <script src="js/towerofhanoijava.js"></script>
+    <a href="numbo jumbo.html" class="button" style="background-color: #ff595e; color: white; padding: 15px 30px; font-size: 1.5em; border-radius: 50px; margin-top: 20px; display: inline-block; text-decoration: none;">Back to Main Menu</a>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Door Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <h1>Mathematical Doors</h1>
+        <div id="level">Level: 1</div>
+        <div class="problem" id="problem">Solve: (3 + 4)</div>
+
+        <div class="doors">
+            <div class="door" id="leftDoor"></div>
+            <div class="character" id="character"></div>
+            <div class="door" id="rightDoor"></div>
+        </div>
+
+        <div id="message"></div>
+        <button id="retryButton" style="display: none;" onclick="retryGame()">Retry</button>
+    </div> 
+   
+
+<script src="script.js"></script>
+</body>
+</html>

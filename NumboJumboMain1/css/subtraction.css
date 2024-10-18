@@ -1,0 +1,85 @@
+body {
+    font-family: 'Fredoka One', sans-serif;
+    background-color: #fffae3;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .home-button {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Fredoka One', cursive;
+}
+  header {
+    background-color: #fcbf49;
+    padding: 20px;
+    border-bottom: 5px solid #f77f00;
+  }
+
+  header h1 {
+    color: #003049;
+    font-size: 3em;
+    margin: 0;
+  }
+
+  #main-content {
+    padding: 40px 20px;
+  }
+
+  .button {
+    background-color: #ff595e;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    border-radius: 50px;
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+  }
+
+  .button:hover {
+    background-color: #d62828;
+  }
+
+  #problem {
+    font-size: 2em;
+    margin: 20px 0;
+  }
+
+  #answer-input {
+    font-size: 1.5em;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #f77f00;
+    margin-bottom: 20px;
+  }
+
+  #feedback {
+    font-size: 1.5em;
+    margin: 20px 0;
+  }
+
+  #score {
+    font-size: 1.5em;
+    margin: 20px 0;
+  }
+
+  footer {
+    background-color: #003049;
+    color: white;
+    padding: 10px 0;
+    margin-top: 50px;
+    border-top: 5px solid #fcbf49;
+  }
+
+  footer p {
+    margin: 0;
+  }

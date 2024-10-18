@@ -1,0 +1,119 @@
+body {
+    font-family: 'Fredoka One', sans-serif;
+    background-color: #fffae3;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  header {
+    background-image: url(img/Clouds.jpg);
+    padding: 20px;
+    border-bottom: 5px solid #f77f00;
+  }
+  
+  header h1 {
+    color: #003049;
+    font-size: 3em;
+    margin: 0;
+  }
+  
+  #main-content {
+    padding: 40px 20px;
+  }
+  
+  .button {
+    background-color: #ff595e;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    border-radius: 50px;
+    margin: 10px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #d62828;
+    transform: scale(1.1);
+  }
+  
+  .button:active {
+    background-color: #d62828;
+    transform: scale(1.05);
+  }
+  
+  .gif-container {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center; 
+    position: relative;
+  }
+  
+  .gif-container img {
+    position: center;
+    margin: 0px 0px;
+    width: 300px;
+    height: auto;
+  }
+  
+  .showcase {
+    background-color: #84d5fe;
+    color: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+  }
+  
+  .showcase h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #003049;
+  }
+  
+  .showcase h3 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #003049;
+  }
+  
+  .showcase p, .showcase ul {
+    font-size: 1.5em;
+    margin: 20px 0;
+    color: #003049;
+    text-align: left;
+  }
+  
+  .showcase ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .showcase ul li {
+    margin: 10px 0;
+    padding-left: 10px;
+  }
+  
+  .showcase .button {
+    background-color: #00aaff;
+    margin: 10px;
+  }
+  
+  .showcase .button:hover {
+    background-color: #0088cc;
+  }
+  
+  footer {
+    background-color: #003049;
+    color: white;
+    padding: 10px 0;
+    margin-top: 50px;
+    border-top: 5px solid #fcbf49;
+  }
+  
+  footer p {
+    margin: 0;
+  }

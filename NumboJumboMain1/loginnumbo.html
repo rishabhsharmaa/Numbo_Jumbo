@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numbo Jumbo - Sign Up</title>
+    <link rel="stylesheet" href="css/login.css">
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-analytics.js"></script>
+    <script src="js/firebaseConfig.js" defer></script>
+    <script src="js/app.js" defer></script>
+</head>
+<!-- <body>
+    <h2>Sign Up Form</h2>
+    <input type="text" id="username" placeholder="Username" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <button id="saveButton">Submit</button>
+
+    <div id="message"></div>
+</body>
+</html>
+
+  <script>
+    // Your Firebase configuration from Firebase Console
+    const firebaseConfig = {
+      apiKey: "your-api-key",
+      authDomain: "your-auth-domain",
+      projectId: "your-project-id",
+      storageBucket: "your-storage-bucket",
+      messagingSenderId: "your-messaging-sender-id",
+      appId: "your-app-id"
+    };
+    
+    // Initialize Firebase
+    const app = firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+    const auth = firebase.auth();
+  </script>
+</head>
+
+<body>
+
+  <header>
+    <h1>Numbo Jumbo</h1>
+    <p>Create an account to start learning!</p>
+  </header>
+
+  <section id="main-content">
+    <div id="signup-box">
+      <h2>Sign Up</h2>
+      <input type="text" id="newUsername" class="input-box" placeholder="Username" required>
+      <input type="email" id="email" class="input-box" placeholder="Email" required>
+      <input type="password" id="newPassword" class="input-box" placeholder="Password" required>
+      <input type="number" id="age" class="input-box" placeholder="Age" min="1" max="100" required>
+      <input type="date" id="dob" class="input-box" placeholder="Date of Birth" required>
+      
+      <button class="button" onclick="signup()">Sign Up</button>
+      <div class="error" id="error">All fields are required!</div>
+      <div class="success" id="success">Sign-up successful! Redirecting...</div>
+    </div>
+  </section>
+  
+  <a href="numbo jumbo.html" class="button" style="background-color: #ff595e; color: white; padding: 15px 30px; font-size: 1.5em; border-radius: 50px; margin-top: 20px; display: inline-block; text-decoration: none;">Back to Main Menu</a>
+  
+  <footer>
+    <p>&copy; 2024 Numbo Jumbo. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    async function signup() {
+      const username = document.getElementById('newUsername').value;
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('newPassword').value;
+      const age = document.getElementById('age').value;
+      const dob = document.getElementById('dob').value;
+      const error = document.getElementById('error');
+      const success = document.getElementById('success');
+
+      if (username === "" || email === "" || password === "" || age === "" || dob === "") {
+        error.style.display = "block"; 
+        success.style.display = "none"; 
+      } else {
+        try {
+          // Create a new user with Firebase Auth
+          const userCredential = await auth.createUserWithEmailAndPassword(email, password);
+          const user = userCredential.user;
+          
+          // Store additional user information in Firestore
+          await db.collection('users').doc(user.uid).set({
+            username: username,
+            email: email,
+            age: age,
+            dob: dob
+          });
+
+          error.style.display = "none"; 
+          success.style.display = "block"; 
+
+          // Redirect after 2 seconds
+          setTimeout(() => {
+            window.location.href = "login.html";
+          }, 2000);
+        } catch (err) {
+          error.innerHTML = err.message;
+          error.style.display = "block";
+          success.style.display = "none";
+        }
+      }
+    }
+  </script>
+
+</body>
+</html> -->

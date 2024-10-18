@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Numbo Jumbo - Fun with Math!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/numbojumbo.css">
+  <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+  <style>
+   
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="css/img/Clouds.jpg" alt="">
+    
+    <h1>Numbo Jumbo</h1>
+    <p>Fun with Math for Kids!</p>
+    <!-- Login and Sign-up buttons on the right -->
+    <div class="auth-buttons">
+      <a href="loginnumbo.html" class="lgnbtn">Login</a>
+      <a href="sighn-up.html" class="lgnbtn">Sign Up</a>
+    </div>
+  </header>
+
+  <section id="main-content">
+    <div class="gif-container">
+      <!-- Replace the src attribute with your GIF URL -->
+      <img src="css/img/numbo jumbo.gif" alt="Fun Animation">
+    </div>
+    <h2>Let's Play and Learn Math!</h2>
+    <p style="color: brown;">Choose a topic to start your math adventure.</p>
+
+    <div class="math-section">
+      <div id="mathsQuiz">
+       <h3>MathQuiz</h6>
+      </div>
+      <div id="funGames">Fun Games</div>
+      <!-- <div id="multiply"></div>
+      <div id="divide">Division</div>
+      <div id="shapes">Shapes & Patterns</div> -->
+    </div>
+
+    <a href="learning.html" class="button">Start Learning</a>
+  </section>
+
+  <footer>
+    <p style="color: white;">&copy; 2024 Numbo Jumbo. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    
+    document.getElementById("mathsQuiz").addEventListener("click", function() {
+      window.location.href = "quizNumbo.html";
+    });
+
+    document.getElementById("funGames").addEventListener("click", function() {
+      window.location.href = "gamenumbo.html";
+    });
+
+    document.getElementById("multiply").addEventListener("click", function() {
+      window.location.href = "multiplication.html";
+    });
+
+    document.getElementById("divide").addEventListener("click", function() {
+      window.location.href = "division.html";
+    });
+    
+    document.getElementById("shapes").addEventListener("click", function() {
+      window.location.href = "shapes.html";
+    });
+  </script>
+  <script src="js/firebase.js"></script>
+
+</body>
+</html>

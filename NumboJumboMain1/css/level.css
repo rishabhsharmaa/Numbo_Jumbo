@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f8ff;
+  }
+  .home-button {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Fredoka One', cursive;
+}
+  header h1 {
+    color: #ff6347;
+  }
+  
+  .shapes-game {
+    margin: 20px;
+  }
+  
+  .shape {
+    display: inline-block;
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .shape.square {
+    background-color: #ffcc00;
+  }
+  
+  .shape.rectangle {
+    width: 140px;
+    background-color: #00ccff;
+  }
+  
+  .shape.circle {
+    background-color: #ff6347;
+    border-radius: 50%;
+  }
+  
+  .shape.triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #32cd32;
+  }
+  
+  .shape.rhombus {
+    background-color: #8a2be2;
+    transform: rotate(45deg);
+  }
+  
+  .shape.pentagon {
+    position: relative;
+    width: 0;
+    border-style: solid;
+    border-width: 50px 25px 0 25px;
+    border-color: #ff1493 transparent transparent transparent;
+    margin-bottom: -30px;
+  }
+  
+  .option {
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .game-result {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
+  .correct {
+    color: green;
+  }
+  
+  .wrong {
+    color: red;
+  }
+  

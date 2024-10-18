@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Numbo Jumbo - Division</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/division.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #FFD700; /* Yellow background */
+            padding: 20px 0;
+            width: 100%;
+            position: relative;
+        }
+        .home-button {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-family: 'Fredoka One', cursive;
+        }
+        .title-container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        
+        header p {
+            margin: 5px 0 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        
+        <div class="title-container">
+            <h1>Division</h1>
+            <p>Test your division skills!</p>
+        </div>
+    </header>
+    <section id="main-content">
+        <div class="question" id="question"></div>
+        <input type="number" id="answer" class="input-box">
+        <button class="button" onclick="checkAnswer()">Submit Answer</button>
+        <div class="points">Points: <span id="points">0</span></div>
+        <div class="feedback" id="feedback"></div>
+        <a href="numbo jumbo.html" class="menu-button">Main Menu</a>
+    </section>
+    <footer>
+        <p>&copy; 2024 Numbo Jumbo. All Rights Reserved.</p>
+    </footer>
+    <script src="js/divison.js"></script>
+</body>
+</html>

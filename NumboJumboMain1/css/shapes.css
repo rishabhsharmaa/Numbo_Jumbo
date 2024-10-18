@@ -1,0 +1,167 @@
+body {
+    font-family: 'Fredoka One', sans-serif;
+    background-color: #c8cfbd;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  header {
+    background-color: #96fff1;
+    padding: 20px;
+    border-bottom: 5px solid #5badff;
+  }
+
+  header h1 {
+    color: #0e6d4f;
+    font-size: 3em;
+    margin: 0;
+  }
+
+  #main-content {
+    padding: 40px 20px;
+  }
+
+  .button {
+    background: linear-gradient(45deg, #ff595e, #ffca3a); /* Bright gradient for a playful look */
+    color: white;
+    padding: 15px 40px; /* Slightly wider for better spacing */
+    font-size: 1.5em;
+    border-radius: 50px;
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: all 0.3s ease; /* Smooth transition for color, size, and shadow */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.button:hover {
+    background-color: #ff8a5b; /* Hover state with a slightly brighter color */
+    background: linear-gradient(45deg, #ff8a5b, #ffd700); /* Brighter hover gradient */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.5s ease;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.button:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.button:active {
+    transform: scale(1); /* Reset zoom when pressed */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Slightly reduce shadow on click */
+}
+
+
+  h2 {
+    color: #003049;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+
+  #target-shape {
+    font-size: 1.5em;
+    margin: 20px 0;
+  }
+
+  .correct {
+    color: green;
+  }
+
+  .wrong {
+    color: red;
+  }
+
+  /* Basic shape styling */
+  .shape {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+  }
+  .square {
+    background-color: red;
+  }
+  .circle {
+    background-color: blue;
+    border-radius: 50%;
+  }
+  .rectangle {
+    background-color: green;
+    width: 150px;
+  }
+  .triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid yellow;
+  }
+  .rhombus {
+    width: 200px;
+  height: 200px;
+  background :#f77f00;
+  transform: skewX(45deg) scaleY(cos(45deg));
+  }
+  
+  .pentagon {
+    position: relative;
+    width: 157.5px;
+    height: 150px;
+    background: #4169e1;
+    clip-path: polygon( 50% 0, 100% 38%, 81% 100%, 19% 100%, 0 38%);
+  }
+  .home-button {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Fredoka One', cursive;
+}
+  #shape-options {
+    margin: 20px 0;
+  }
+
+  .option {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+  }
+
+  #game-result {
+    font-size: 1.5em;
+    margin: 20px 0;
+  }
+
+  footer {
+    background-color: #003049;
+    color: white;
+    padding: 10px 0;
+    margin-top: 50px;
+    border-top: 5px solid #fcbf49;
+  }
+
+  footer p {
+    margin: 0;
+  }
