@@ -1,65 +1,188 @@
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #e0f7fa;
+    font-family: 'Fredoka One', sans-serif;
+    background-color: #dbfef9;
+    color: #82238a;
     margin: 0;
-}
-
-.container {
+    padding: 0;
     text-align: center;
-}
-
-.game-button {
-    display: block;
-    margin: 10px auto;
-    padding: 15px 30px;
-    font-size: 20px;
-    text-decoration: none;
+  }
+  body::before {
+    content: "";
+    background-image: url('Forest.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2; 
+    z-index: -1; 
+  }
+  .home-button {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #4CAF50;
     color: white;
-    background-color: #ff6f61;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    position: relative;
-}
-
-.game-button:nth-child(2) {
-    background-color: #4dd0e1;
-}
-
-.game-button:nth-child(3) {
-    background-color: #ffca28;
-}
-
-.game-button:nth-child(4) {
-    background-color: #ab47bc;
-}
-
-.game-button:hover {
-    transform: scale(1.1); /* Slightly grows the button */
-    color: #fff59d;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
-
-.game-button:active {
-    transform: scale(1); /* Quickly "bounces" back to original size */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-@keyframes bounce {
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Fredoka One', cursive;
+  }
+  
+  
+  
+  h1 {
+    color: #ff69b4; 
+    font-size: 24px; 
+    font-family: 'Comic Sans MS', cursive, sans-serif; 
+    text-shadow: 2px 2px 0 rgba(255, 255, 255, 0.7), 0 0 25px rgba(117, 9, 117, 0.5); 
+    animation: bounce 1s infinite; 
+  }
+  
+  @keyframes bounce {
     0%, 100% {
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-5px);
+        transform: translateY(-10px);
     }
-}
-
-.game-button:hover {
-    animation: bounce 0.3s ease-in-out;
-}
+  }
+  
+  header {
+    position: relative;
+    text-align: center;
+    background-color: #84d5fe;
+    padding: 20px;
+    border-bottom: 5px solid #8fcf89;
+  }
+  
+  header img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    opacity: 0.5; 
+    z-index: 1; 
+  }
+  
+  h1, p {
+    position: relative;
+    z-index: 2;
+    margin: 0; 
+    color:rgb(0, 20, 90);
+  }
+  
+  header h1 {
+    color: #081f2b;
+    font-size: 3em;
+    margin: 5px;
+  }
+  .auth-buttons {
+    position: relative; 
+    top: 20px; 
+    right: 20px; 
+    display: flex;
+    gap: 15px; 
+  }
+  
+  .lgnbtn {
+    text-decoration: none; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    color: white; 
+    background-color: #007bff; 
+    font-weight: bold; 
+    transition: background-color 0.3s, transform 0.3s; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0); 
+  }
+  
+  .lgnbtn:hover {
+    background-color: #0f66c3;
+    transform: translateY(-5px); 
+  }
+  
+  .lgnbtn:active {
+    transform: translateY(0); 
+  }
+  
+  #main-content {
+    padding: 40px 20px;
+  }
+   
+    .button {
+      background-color: #ff595e;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.5em;
+      border-radius: 50px;
+      margin: 10px;
+      display: inline-block;
+      text-decoration: none;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+  
+    .button:hover {
+      background-color: #d62828;
+      transform: scale(1.1);
+    }
+  
+    .button:active {
+      background-color: #d62828;
+      transform: scale(1.05);
+    }
+  
+    .gif-container {
+      margin-bottom: 20px;
+    }
+  
+    .gif-container img {
+      width: 300px;
+      height: auto;
+    }
+  
+    .showcase {
+      background-color: #75f0fc;
+      color: white;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      margin: 20px;
+    }
+  
+    .showcase h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #d28dda;
+    }
+  
+    .showcase p {
+      font-size: 1.5em;
+      margin: 20px 0;
+      color: #003049;
+    }
+  
+    .showcase .button {
+      background-color: #a0ef6b;
+      margin: 10px;
+    }
+  
+    .showcase .button:hover {
+      background-color: #0088cc;
+    }
+  
+    footer {
+      background-color: #003049;
+      color: white;
+      padding: 10px 0;
+      margin-top: 50px;
+      border-top: 5px solid #fcbf49;
+    }
+  
+    footer p {
+      margin: 0;
+    }
